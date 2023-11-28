@@ -3,12 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Recipe App | Isha Gandhi</title>
 </head>
-<body>
-    
+<body class="body-fixed">
 
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="./index.html" class="">
+                            <img src="./images/logo.png" alt="Logo Image" width="160" height="36">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation d-flex align-items-center justify-content-end">
+                        <button class="menu-toggle d-md-none"><span></span><span></span></button>
+                        <nav class="header-menu d-md-none d-lg-block">
+                            <ul class="menu food-nav-menu d-flex justify-content-center">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-right d-flex align-items-center">
+                            <form action="#" class="header-search-form for-des">
+                                <input type="search" class="form-input" placeholder="Search...">
+                                <button type="submit"><i class="uil uil-search"></i></button>
+                            </form>
+                            <a href="javascript:void(0)" class="header-btn header-cart">
+                                <i class="uil uil-shopping-cart uil-2x"></i>
+                                <span class="cart-number">3</span>
+                            </a>
+                            <a href="javascript:void(0)" class="header-btn">
+                                <i class="uil uil-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Bootstarp 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FancyBox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!-- Parallax JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js" integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Scroll Trigger JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Smooth Scroll JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom JS -->
     <script src="./app.js"></script>
 </body>
 </html>
