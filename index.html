@@ -16,17 +16,17 @@
     <header class="site-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-5">
                     <div class="header-logo">
                         <a href="./index.html" class="">
-                            <img src="./images/logo.png" alt="Logo Image" width="160" height="36">
+                            <img src="./images/logo.png" alt="Logo Image">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 col-7">
                     <div class="main-navigation d-flex align-items-center justify-content-end">
                         <button class="menu-toggle d-md-none"><span></span><span></span></button>
-                        <nav class="header-menu d-md-none d-lg-block">
+                        <nav class="header-menu d-lg-block">
                             <ul class="menu food-nav-menu d-flex justify-content-center">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
@@ -36,13 +36,13 @@
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
-                        <div class="header-right d-flex align-items-center">
-                            <form action="#" class="header-search-form for-des">
+                        <div class="header-right d-flex align-items-center flex-wrap">
+                            <form action="#" class="header-search-form for-des position-relative">
                                 <input type="search" class="form-input" placeholder="Search...">
-                                <button type="submit"><i class="uil uil-search"></i></button>
+                                <button type="submit" class="position-absolute"><i class="uil uil-search"></i></button>
                             </form>
                             <a href="javascript:void(0)" class="header-btn header-cart">
-                                <i class="uil uil-shopping-cart uil-2x"></i>
+                                <i class="uil uil-shopping-bag"></i>
                                 <span class="cart-number">3</span>
                             </a>
                             <a href="javascript:void(0)" class="header-btn">
@@ -55,6 +55,70 @@
         </div>
     </header>
 
+    <main class="main">
+        <section class="main-banner" id="home">
+            <div class="js-parallax-wp">
+                <div class="banner-shape-1">
+                    <img src="./images/berry.png" alt="Berry Image">
+                </div>
+                <!-- <div class="banner-shape-2">
+                    <img src="./images/leaf.png" alt="Berry Image">
+                </div> -->
+            </div>
+            <div class="sec-wp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="banner-text">
+                                <h1 class="h1-title">Welcome To Our <span>Indian</span> Restuarant.</h1>
+                                <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eveniet aspernatur nemo fugiat. Quibusdam aliquam, repellendus facilis tempora rerum quod ut natus distinctio exercitationem autem cupiditate non accusantium, sed delectus.</p>
+                                <div class="banner-btn mt-4">
+                                    <a href="#menu" class="section-btn">Check our Menu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="banner-img-container">
+                                <div class="banner-img"></div>
+                            </div>
+                            <div class="banner-img-text">
+                                <h5 class="h5-title mt-4 mx-auto">Sushi</h5>
+                                <p>this is Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="brands-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="brand-title mb-5">
+                            <h5 class="h5-title">TRUSTED BY 70+ COMPANIES</h5>
+                        </div>
+                        <div class="brands-row d-flex align-items-center justify-content-center">
+                            <div class="brands-box d-flex align-items-center justify-content-center">
+                                <img src="./images/brands/b1.png" alt="">
+                            </div>
+                            <div class="brands-box d-flex align-items-center justify-content-center">
+                                <img src="./images/brands/b2.png" alt="">
+                            </div>
+                            <div class="brands-box d-flex align-items-center justify-content-center">
+                                <img src="./images/brands/b3.png" alt="">
+                            </div>
+                            <div class="brands-box d-flex align-items-center justify-content-center">
+                                <img src="./images/brands/b4.png" alt="">
+                            </div>
+                            <div class="brands-box d-flex align-items-center justify-content-center">
+                                <img src="./images/brands/b5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- Bootstarp 5 -->
