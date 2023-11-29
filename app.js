@@ -153,3 +153,22 @@ function displayItems() {
 
 displayMenuItems(menuLists);
 displayItems();
+
+let swiper = new Swiper('.book-table-img-slider', {
+    effect: "coverflow",
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+})
