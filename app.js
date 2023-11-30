@@ -155,20 +155,32 @@ displayMenuItems(menuLists);
 displayItems();
 
 let swiper = new Swiper('.book-table-img-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
     effect: "coverflow",
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
-      },
+    },
+    speed: 2000,
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
+      rotate: 3,
+      stretch: 2,
       depth: 100,
-      modifier: 1,
-      slideShadows: true,
+      modifier: 5,
+      slideShadows: false,
     },
+    loopAddition: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true    
+    }
 })

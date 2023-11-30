@@ -625,6 +625,29 @@ body{
     overflow: hidden;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: unset;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    font-size: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+    color: #0d0d25;
+    background-color: #ffffff;
+    box-shadow: -20px 20px 60px #d4d4d4, 20px -20px 60px #ffffff;
+    padding-top: 1px;
+    padding-right: 2px;
+    transition: .3s;
+}
+
 @media screen and (max-width: 991px) {
     
     .site-header, .site-header.sticky_head {
