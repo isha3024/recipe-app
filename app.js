@@ -190,7 +190,7 @@ let teamSlider = new Swiper('.team-slider', {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
     },
     speed: 2000,

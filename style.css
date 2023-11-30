@@ -13,6 +13,7 @@ font-family: 'Poppins', sans-serif; */
 img {
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 
 a {
@@ -337,7 +338,9 @@ body{
 
 .section-book-table,
 .section-our-menu,
-.section-about {
+.section-about,
+.section-slider,
+.top-footer {
     padding-top: 100px;
 }
 
@@ -621,7 +624,7 @@ body{
     opacity: .8;
 }
 
-.book-table-image-swiper {
+.book-table-image-swiper a {
     max-height: 70vh;
     height: 100%;
 }
@@ -799,6 +802,10 @@ body{
     margin-bottom: 30px;
 }
 
+.blog-box:hover {
+    transform: scale(1.03);
+}
+
 .blog-img {
     width: 100%;
     height: 280px;
@@ -816,6 +823,8 @@ body{
     border-radius: 8px;
     font-size: 14px;
     margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .blog-text .h4-title {
@@ -902,6 +911,34 @@ body{
 .faq-box p {
     padding: 8px 30px 20px;
     margin: 0;
+}
+
+.footer-logo a {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+}
+
+.footer-menu ul li {
+    margin-bottom: 8px;
+}
+
+.footer-menu ul li a:hover {
+    color: #e26a2c;
+}
+
+.bottom-footer {
+    border-top: 1px solid rgba(204, 204, 204, .4);
+}
+
+.copyright-text {
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.copyright-text .name {
+    color: #e26a2c;
+    font-style: italic;
 }
 
 @media screen and (max-width: 991px) {
@@ -1020,7 +1057,61 @@ body{
     .menu-tab .filters::-webkit-scrollbar {
         display: none;
     }
-    
+
+    .book-table-info {
+        max-width: 300px;
+        margin: 30px auto 0;
+    }
+
+    .call-now {
+        border: none;
+        margin: 40px 0;
+        border-top: 3px dotted rgb(13, 13, 17, .5);
+        border-bottom: 3px dotted rgb(13, 13, 17, .5);
+        padding: 30px 0;
+    }
+
+    .call-now a {
+        font-size: 28px;
+    }
+
+    .swiper-button-wp {
+        display: none !important;
+    }
+
+    .testimonial-img {
+        margin-bottom: 60px;
+    }
+
+    .faq-row {
+        column-count: 1;
+        margin: 0;
+    }  
+
+    .faq-box {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .blog-img {
+        height: 240px;
+    }
+
+    .newsletter-box {
+        padding: 20px;
+    }
+
+    .newsletter-form .form-input {
+        padding: 0 130px 0 12px;
+    }
+
+    .footer-info {
+        margin-bottom: 30px;
+    }
+
+    .footer-flex-box > div {
+        margin: 0 0 30px;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -1033,6 +1124,12 @@ body{
     
     .book-table-bg {
        display: none;
+    }
+
+    .book-table-image-swiper a {
+        min-height: 340px;
+        height: 60vh;
+        max-height: 60vh;
     }
 
 }
@@ -1055,5 +1152,25 @@ body{
 
     .banner-img-container {
         height: 90vw;
+    }
+
+    .brands-row {
+        margin: 0 -15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
+    .brands-box {
+        padding: 0 15px;
+        flex: 0 0 33%;
+        margin-bottom: 30px;
+    }
+
+    .brands-box img {
+        max-width: 80%;
+    }
+
+    .swiper-pagination {
+        padding: 10px 15px;
     }
 }
