@@ -148,7 +148,6 @@ function displayItems() {
             }
         })
     })
-    console.log(filterBtns);
 }
 
 displayMenuItems(menuLists);
